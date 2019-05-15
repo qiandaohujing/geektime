@@ -1,10 +1,10 @@
-import login from "./login"
+import vslot from "./index"
 import {
   BaseRouter
 } from "@/router/base"
 
-const loginRouter = [
-  new BaseRouter('/login', login, 'login', '登录')
+const vslotRouter = [
+  new BaseRouter('/vslot', vslot, 'vslot', '登录')
 ]
 
-export default loginRouter
+export default vslotRouter
