@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { getToken, removeToken } from './token'
+import { Message } from 'element-ui';
 
 //create an axios instance
 const service = axios.create({
@@ -36,7 +37,7 @@ service.interceptors.response.use(
     if (service.loading) {
       service.loading.close();
     }
-    console.log(error);
+    // console.log(error);
     return Promise.reject(error);
   }
 );
