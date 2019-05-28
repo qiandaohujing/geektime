@@ -1,11 +1,12 @@
 import {
   BaseRouter
 } from "@/router/base"
-import Home from '../components/Home'
+import Home from '../components/common/Home'
 import Vue from 'vue'
 import Router from 'vue-router'
 import vmodelRouter from '../components/1.2/router';
 import vslotRouter from '../components/1.1/router';
+import vwatchRouter from '../components/1.3/router';
 
 Vue.use(Router)
 
@@ -23,5 +24,6 @@ export default new Router({
     ...HomeRouter,
     ...vslotRouter,
     ...vmodelRouter,
+    ...vwatchRouter
   ]
 })
